@@ -17,7 +17,7 @@ Promise.all(urls.map(url => {
 }).catch(() => console.log('something went wrong'))
 
 var arry = [
-	return Promise.all(urls.map(url => {
+	 Promise.all(urls.map(url => {
 	return fetch(url).then(resp => resp.json())
 })).then(results => {
 	console.log(results[0])
