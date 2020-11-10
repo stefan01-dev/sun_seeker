@@ -16,16 +16,16 @@ Promise.all(urls.map(url => {
 	console.log(results[2].main.temp)
 }).catch(() => console.log('something went wrong'))
 
-var arry = [
-	 Promise.all(urls.map(url => {
-	return fetch(url).then(resp => resp.json())
-})).then(results => {
-	console.log(results[0])
-	console.log(results[1])
-	console.log(results[2])
-	return results
-}).catch(() => console.log('something went wrong'))
-]
+// var array = [
+// 	 Promise.all(urls.map(url => {
+// 	return fetch(url).then(resp => resp.json())
+// })).then(results => {
+// 	console.log(results[0])
+// 	console.log(results[1])
+// 	console.log(results[2])
+// 	return results
+// }).catch(() => console.log('something went wrong'))
+// ]
 
 
 // this works
