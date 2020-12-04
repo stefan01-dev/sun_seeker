@@ -38,4 +38,9 @@ Promise.all(urls.map(url => {
     console.log(results[2])
     return results[0]
 }).catch(() => console.log('something went wrong'))
-]
+];
+
+
+// got to convert data from JSON to assing it to a variable, for ex. temp location etc.
+var json = JSON.stringify(urls[2]);
+console.log(json);
