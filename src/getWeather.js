@@ -9,13 +9,13 @@ const urls = [
   const getWeather = () => {
     return(
       <div>
-    {/* this works, got to run in in chrome console */}
+      {/* this works, got to run in in chrome console */}
       { Promise.all(urls.map(url => {
           return fetch(url).then(resp => resp.json())
       })).then(results => {
         //Returns the name of the city
           console.log(results[2].name)
-          return results[0]
+          return results[2].name
       }).catch(() => console.log('something went wrong'))}
       </div>
     )
