@@ -4,6 +4,7 @@ var getWeather = new XMLHttpRequest();
 getWeather.onreadystatechange = function() {
   if (this.readyState === 4 && this.status === 200) {
     var myObj = JSON.parse(this.responseText);
+    document.getElementById("cityName").innerHTML = myObj.name;
     document.getElementById("demo").innerHTML = myObj.main.temp;
   }
 };
