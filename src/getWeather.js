@@ -8,6 +8,8 @@ getWeather.onreadystatechange = function() {
     document.getElementById("demo").innerHTML = myObj.main.temp;
   }
 };
+
+// q=cityname got to  get it from search bar
 getWeather.open("GET", "https://api.openweathermap.org/data/2.5/weather?appid=e66e299afb2ec32c804c326c2d169257&units=metric&q=bucharest", true);
 getWeather.send();
 
