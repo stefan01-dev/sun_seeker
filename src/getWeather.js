@@ -6,7 +6,10 @@ getWeather.onreadystatechange = function() {
     var myObj = JSON.parse(this.responseText);
     document.getElementById("cityName").innerHTML = myObj.name;
     document.getElementById("demo").innerHTML = myObj.main.temp;
+
   }
+    var cityName = myObj.name;
+    var temp = myObj.main.temp;
 };
 
 // q=cityname got to  get it from search bar
