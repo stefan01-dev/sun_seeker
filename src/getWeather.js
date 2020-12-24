@@ -4,12 +4,13 @@ var getWeather = new XMLHttpRequest();
 getWeather.onreadystatechange = function() {
   if (this.readyState === 4 && this.status === 200) {
     var myObj = JSON.parse(this.responseText);
-    document.getElementById("cityName").innerHTML = myObj.name;
-    document.getElementById("demo").innerHTML = myObj.main.temp;
-
-  }
     var cityName = myObj.name;
     var temp = myObj.main.temp;
+    document.getElementById("cityName").innerHTML = cityName;
+    document.getElementById("demo").innerHTML = temp;
+   
+  }
+    
 };
 
 // q=cityname got to  get it from search bar
