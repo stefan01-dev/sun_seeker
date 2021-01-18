@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+function getLocationWeather() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    async function getLocationWeather(location) {
+  try {
+    const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`);
+
+    if (result.status === 200) {
+      return { success: true, data: await result.json() };
+    }
+
+    return { success: false, error: result.statusText };
+  } catch (ex) {
+    return { success: false, error: ex.message };
+  }
+}
   );
 }
 
-export default App;
+export default getLocationWeather;
