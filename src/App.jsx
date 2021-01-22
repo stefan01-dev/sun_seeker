@@ -65,7 +65,7 @@ function App() {
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" color="inherit">
-                        Weather
+                        Sun seeker
                     </Typography>
                 </Toolbar>
             </AppBar>
