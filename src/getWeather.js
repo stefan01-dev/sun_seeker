@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 
 var getWeather = new XMLHttpRequest();
 getWeather.onreadystatechange = function() {
@@ -10,8 +10,8 @@ getWeather.onreadystatechange = function() {
 };
 
 // q=cityname got to  get it from search bar
-// data in v1 is mooving ok, still having some errors.
-getWeather.open("GET", "https://api.openweathermap.org/data/2.5/weather?appid=e66e299afb2ec32c804c326c2d169257&units=metric&q=mumbai", true);
+
+getWeather.open("GET", "https://api.openweathermap.org/data/2.5/weather?appid=e66e299afb2ec32c804c326c2d169257&units=metric&q=paris", true);
 getWeather.send();
 
 
@@ -21,6 +21,10 @@ async function getLocationWeather(location) {
   return result.json();
 }
 
- getLocationWeather("London");
+ await getLocationWeather("London");
+
+
+// document.getElementById("cityName").innerHTML = myObj.name;
+// document.getElementById("demo").innerHTML = myObj.main.temp;
 
 export default getWeather;
