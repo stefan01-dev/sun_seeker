@@ -1,5 +1,5 @@
 import React from 'react';
-import getWeather from './getWeather';
+//import getWeather from './getWeather';
 
 const Card = () => {
 	return (
