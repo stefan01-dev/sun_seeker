@@ -1,17 +1,43 @@
-[
-    {
-        "id": 1,
-        "name": "Rick",
-        "email": "rick@gmail.com"
+{
+    "coord": {
+        "lon": -85.1647,
+        "lat": 34.257
     },
-    {
-        "id": 2,
-        "name": "Glenn",
-        "email": "Glenn@gmail.com"
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 6.27,
+        "feels_like": 3.42,
+        "temp_min": 5,
+        "temp_max": 8,
+        "pressure": 1032,
+        "humidity": 46
     },
-    {
-        "id": 3,
-        "name": "Negan",
-        "email": "Negan@gmail.com"
-    }
-]
+    "visibility": 10000,
+    "wind": {
+        "speed": 0.42,
+        "deg": 158
+    },
+    "clouds": {
+        "all": 1
+    },
+    "dt": 1615261319,
+    "sys": {
+        "type": 1,
+        "id": 5680,
+        "country": "US",
+        "sunrise": 1615204820,
+        "sunset": 1615246959
+    },
+    "timezone": -18000,
+    "id": 4219762,
+    "name": "Rome",
+    "cod": 200
+}
