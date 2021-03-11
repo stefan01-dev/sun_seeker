@@ -6,9 +6,9 @@ const Card = () => {
 		<div className='bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
 		 <img alt='' src='https://robohash.org/test?200x200' />
 		  <div> 
-			<h2 id='conditions'> Conditions</h2>
-			<h2 id='cityName'> City</h2>
-			<h3 id='deg'> degrees</h3>
+			<h2 id='conditions'> Conditions not loaded</h2>
+			<h2 id='cityName'> City not loaded</h2>
+			<h3 id='deg'> Degrees not loaded</h3>
 		  </div>
 		</div>
 		);
