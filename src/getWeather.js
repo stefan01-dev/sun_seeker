@@ -30,14 +30,16 @@ function getWeather(){
 
       const place = data.name;
       const temp = data.main.temp;
-      const temp2 = temp.toString()
+      
 
       console.log(place)
       console.log(temp)
-      console.log(temp2)
-    // loc.innerHTML=  'aa'
-    loc.textContent = `${place}`
-    temp.textContent= `${temp2} C`
+
+
+      loc.textContent = `${place}`
+      deg.textContent= `${temp}`
+    
+    
     }
       
     )
