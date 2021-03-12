@@ -1,15 +1,8 @@
 import React from 'react';
 
-const area = 'Rome';
+const area = 'Dubai';
 const api = 'e66e299afb2ec32c804c326c2d169257'
 const base = `https://api.openweathermap.org/data/2.5/weather?appid=${api}&units=metric&q=${area}`;
-
-
-// document.getElementById('getUsers').addEventListener('click', getUsers );
-// document.getElementById('getPosts').addEventListener('click', getWeather );
-// document.add
-
-
 
 
 function getWeather(){
@@ -31,14 +24,8 @@ function getWeather(){
       const place = data.name;
       const temp = data.main.temp;
       
-
-      console.log(place)
-      console.log(temp)
-
-
       loc.textContent = `${place}`
       deg.textContent= `${temp}`
-    
     
     }
       
