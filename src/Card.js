@@ -13,10 +13,4 @@ const Card = () => {
 		</div>
 		);
 }
-
-const area = 'Chicago';
-const api = 'e66e299afb2ec32c804c326c2d169257'
-const base = `https://api.openweathermap.org/data/2.5/weather?appid=${api}&units=metric&q=${area}`;
-
-
 export default Card;
