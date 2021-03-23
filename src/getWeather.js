@@ -20,12 +20,15 @@ function getWeather(){
 
     const loc = document.getElementById('cityName');
     const deg = document.getElementById('deg');
+    const con = document.getElementById('conditions');
 
       const place = data.name;
       const temp = data.main.temp;
+      const conditions = data.weather[0].description;
       
       loc.textContent = `${place}`
-      deg.textContent= `${temp}`
+      deg.textContent = `${temp}`
+      con.textContent = `${conditions}`
     
     }
       
