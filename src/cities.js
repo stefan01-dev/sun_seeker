@@ -1,12 +1,12 @@
-import {getWeather} from './getWeather';
 
-export const cities = (temp) => [
+import getWeather from './getWeather';
+
+export const cities = [
+
     {
-        name:'bucharest',
-        temperature: "aasß",
-    },
-    {
-        name:'paris',
-        temperature: '40',
+        conditions: getWeather.conditions,
+        name: getWeather.place,
+        temperature: getWeather.temperature
     }
+
 ];
